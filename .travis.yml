@@ -1,0 +1,32 @@
+language: objective-c
+podfile: Podfile
+matrix:
+  include:
+    - osx_image: xcode7
+      env: XCODE=7 COCOAPODS=GOOD
+    - osx_image: xcode7.1
+      env: XCODE=7.1 COCOAPODS=GOOD
+    - osx_image: xcode7.2.b1
+      env: XCODE=7.2b1 COCOAPODS=GOOD
+    - osx_image: xcode7
+      env: XCODE=7 COCOAPODS=BAD
+    - osx_image: xcode7.1
+      env: XCODE=7.1 COCOAPODS=BAD
+    - osx_image: xcode7.2.b1
+      env: XCODE=7.2b1 COCOAPODS=BAD
+    - osx_image: xcode7
+      env: XCODE=7 COCOAPODS=CANDIDATE
+    - osx_image: xcode7.1
+      env: XCODE=7.1 COCOAPODS=CANDIDATE 
+    - osx_image: xcode7.2.b1
+      env: XCODE=7.2b1 COCOAPODS=CANDIDATE 
+before_install:
+- xcodebuild -version -sdk
+- git clone "https://github.com/timbodeit/CocoaPods.git"
+- ( cd CocoaPods && git checkout $COCOAPODS && rake bootstrap )
+- ./CocoaPods/bin/pod install
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+- xctool -workspace CocoaPodsBugTest.xcworkspace -scheme CocoaPodsBugTest -sdk iphonesimulator build
+
