@@ -11,7 +11,6 @@
 		163756071BEB9661000FC5EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163756061BEB9661000FC5EE /* ViewController.swift */; };
 		1637560A1BEB9661000FC5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163756081BEB9661000FC5EE /* Main.storyboard */; };
 		1637560C1BEB9661000FC5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1637560B1BEB9661000FC5EE /* Assets.xcassets */; };
-		1637560F1BEB9661000FC5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1637560D1BEB9661000FC5EE /* LaunchScreen.storyboard */; };
 		1637561A1BEB9661000FC5EE /* CocoaPodsBugTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163756191BEB9661000FC5EE /* CocoaPodsBugTestTests.swift */; };
 		163756251BEB9661000FC5EE /* CocoaPodsBugTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163756241BEB9661000FC5EE /* CocoaPodsBugTestUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		163756061BEB9661000FC5EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		163756091BEB9661000FC5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1637560B1BEB9661000FC5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1637560E1BEB9661000FC5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163756101BEB9661000FC5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		163756151BEB9661000FC5EE /* CocoaPodsBugTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsBugTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		163756191BEB9661000FC5EE /* CocoaPodsBugTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaPodsBugTestTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				163756061BEB9661000FC5EE /* ViewController.swift */,
 				163756081BEB9661000FC5EE /* Main.storyboard */,
 				1637560B1BEB9661000FC5EE /* Assets.xcassets */,
-				1637560D1BEB9661000FC5EE /* LaunchScreen.storyboard */,
 				163756101BEB9661000FC5EE /* Info.plist */,
 			);
 			path = CocoaPodsBugTest;
@@ -228,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1637560F1BEB9661000FC5EE /* LaunchScreen.storyboard in Resources */,
 				1637560C1BEB9661000FC5EE /* Assets.xcassets in Resources */,
 				1637560A1BEB9661000FC5EE /* Main.storyboard in Resources */,
 			);
@@ -298,14 +294,6 @@
 				163756091BEB9661000FC5EE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1637560D1BEB9661000FC5EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1637560E1BEB9661000FC5EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -483,6 +471,7 @@
 				1637562B1BEB9661000FC5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1637562C1BEB9661000FC5EE /* Build configuration list for PBXNativeTarget "CocoaPodsBugTestTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +480,7 @@
 				1637562E1BEB9661000FC5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1637562F1BEB9661000FC5EE /* Build configuration list for PBXNativeTarget "CocoaPodsBugTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +489,7 @@
 				163756311BEB9661000FC5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
